@@ -1,0 +1,10 @@
+export { About } from "./About";
+export { Blog } from "./Blog";
+export { Careers } from "./Careers";
+export { Contact } from "./Contact";
+export { Error } from "./Error";
+export { Features } from "./Features";
+export { Home } from "./Home";
+export { Integration } from "./Integration";
+export { License } from "./License";
+export { Price } from "./Price";

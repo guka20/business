@@ -1,0 +1,38 @@
+.navbar {
+  position: relative;
+  z-index: 1;
+  padding: 20px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  .logo {
+    width: 150px;
+  }
+  ul.links {
+    padding: 15px 0;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+    max-width: 700px;
+    li {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      svg {
+        margin: 0 1px;
+      }
+    }
+  }
+  button.sign-in {
+    width: 126px;
+    height: 50px;
+    border-radius: 39px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+}

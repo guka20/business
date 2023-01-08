@@ -1,0 +1,22 @@
+@import "variables";
+@import "navbar";
+@import "layout";
+@import "home";
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  list-style: none;
+  outline: none;
+  border: none;
+}
+button {
+  cursor: pointer;
+}
+.App {
+  width: 100%;
+  background-color: $secondary5;
+  overflow-y: auto;
+  overflow-x: none;
+}
