@@ -12,7 +12,6 @@
     width: 150px;
   }
   ul.links {
-    padding: 15px 0;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.3);
     display: flex;
@@ -20,11 +19,53 @@
     width: 55%;
     max-width: 700px;
     li {
+      padding: 15px 0;
+      &.drop-down {
+        height: 100%;
+      }
       cursor: pointer;
       display: flex;
       align-items: center;
+      position: relative;
       svg {
         margin: 0 1px;
+      }
+      .page-list {
+        left: -50%;
+        top: 100%;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+        height: 0;
+        width: 130px;
+        background-color: rgba(255, 247, 247, 0.3);
+        color: $primary1;
+        overflow: hidden;
+      }
+      &:hover {
+        .page-list {
+          transition: 1s height;
+          display: flex;
+          height: 150px;
+          &:hover {
+            display: flex;
+          }
+          li:hover {
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 1px;
+              left: 0;
+              width: 100%;
+              background-color: $primary1;
+              height: 3px;
+            }
+          }
+        }
       }
     }
   }

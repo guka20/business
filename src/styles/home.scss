@@ -52,7 +52,6 @@
     flex-direction: column;
     .title {
       @include widthCenter;
-      margin: 0 auto;
       .features {
         text-align: center;
         span {
@@ -74,9 +73,11 @@
     }
     .cards {
       @include widthCenter;
-      margin: 0 auto;
       display: flex;
       justify-content: space-between;
+      .card:nth-child(2) {
+        background-color: #d5d2ea;
+      }
       .card {
         position: relative;
         padding: 15px 15px 30px 15px;
@@ -86,8 +87,8 @@
         align-items: center;
         transition: 1s background-color;
         border-radius: 20px;
-        &:hover {
-          background-color: #d5d2ea;
+        &:hover:not(:nth-child(2)) {
+          background-color: #e6e4f3;
           cursor: pointer;
         }
         img {
@@ -122,7 +123,7 @@
           align-items: center;
 
           span {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: bold;
           }
           p {
@@ -130,13 +131,118 @@
           }
           img {
             margin-right: 10px;
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
           }
         }
       }
       img {
         width: 50%;
+      }
+    }
+    .account {
+      @include widthCenter;
+      .locations {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .location-button {
+          transition: 0.4s background-color;
+          font-size: 1.1rem;
+          width: 33%;
+          height: 70px;
+          border-radius: 20px;
+          &.active {
+            background-color: $primary1;
+            color: white;
+          }
+        }
+      }
+      .component {
+        @include widthCenter;
+        max-width: 1000px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        min-height: 250px;
+        .texture {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 50%;
+          .header {
+            display: flex;
+            align-items: center;
+            img {
+              height: 100%;
+              width: 70px;
+              margin-right: 10px;
+            }
+          }
+
+          .get-started {
+            width: 150px;
+            height: 55px;
+            border-radius: 39px;
+            background-color: $secondary3;
+            color: white;
+            font-size: 1rem;
+          }
+        }
+        .card-image {
+          float: right;
+          height: 100%;
+          width: 50%;
+        }
+      }
+    }
+    .Testimonial {
+      margin-top: 150px;
+      width: 100%;
+      padding: 50px 0px 100px 0;
+      background-color: $primary1;
+      background-image: url("../assets/testimonial.png");
+      background-size: cover;
+      background-position: center center;
+      .title {
+        margin-top: 100px;
+        .features {
+          span {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: white;
+          }
+        }
+        .introduction {
+          margin-top: 50px;
+          h1 {
+            width: auto;
+            color: white;
+          }
+        }
+        img.quote {
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .description {
+        text-align: center;
+        width: 75%;
+        max-width: 700px;
+        margin: 20px auto;
+        font-style: italic;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+      }
+      .user {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        * {
+          line-height: 3px;
+        }
       }
     }
   }

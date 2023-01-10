@@ -12,8 +12,13 @@ export const Navbar = () => {
         <li>Home</li>
         <li>About</li>
         <li>Features</li>
-        <li>
+        <li className="drop-down">
           Pages <AiFillCaretDown />
+          <ul className="page-list">
+            <li className="list-item">page 1</li>
+            <li className="list-item">page 2</li>
+            <li className="list-item">page 3</li>
+          </ul>
         </li>
         <li>Blog</li>
       </ul>
