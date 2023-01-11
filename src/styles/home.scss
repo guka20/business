@@ -245,5 +245,182 @@
         }
       }
     }
+    .pricing {
+      width: 90%;
+      margin: 60px auto;
+      display: flex;
+      justify-content: space-between;
+      .pricing-details {
+        align-self: center;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          margin: 0;
+          color: $primary1;
+          width: fit-content;
+          padding: 10px 30px;
+          border-radius: 30px;
+          background-color: #efecff;
+        }
+        h1 {
+          padding: 0;
+          margin: 10px 0;
+        }
+        .methods {
+          display: flex;
+          justify-content: space-between;
+          img {
+            width: 23%;
+            cursor: pointer;
+          }
+        }
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $secondary1;
+        border-radius: 25px;
+        padding: 10px;
+        header.header {
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h2 {
+            font-weight: bold;
+          }
+        }
+        &.basic {
+          header.header {
+            span {
+              background-color: white;
+              padding: 10px;
+              border-radius: 20px;
+              color: $secondary4;
+            }
+          }
+          main {
+            .get-started {
+              padding: 25px 51px 25px 51px;
+              border-radius: 35px;
+              border: 1px solid #d3d3d3;
+              font-size: 1.1rem;
+            }
+          }
+        }
+        &.advanced {
+          header.header {
+            span {
+              color: $primary1;
+              width: fit-content;
+              padding: 10px 20px;
+              border-radius: 30px;
+              background-color: #efecff;
+            }
+          }
+          main {
+            ul li b {
+              color: $primary1;
+            }
+            .get-started {
+              width: 150px;
+              height: 55px;
+              border-radius: 39px;
+              background-color: $secondary3;
+              color: white;
+              font-size: 1rem;
+            }
+          }
+        }
+        main {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .bill {
+            padding: 6px 28px 6px 28px;
+            border-radius: 40px;
+            background-color: #ffeecc;
+            color: #c68a15;
+          }
+          ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            li {
+              margin: 10px 0;
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+    .newslatter {
+      width: 86%;
+      padding: 0 2%;
+      margin: 50px auto;
+      height: 500px;
+      border-radius: 50px;
+      background-image: url("../assets/newslatter.png");
+      display: flex;
+      align-items: center;
+      img,
+      .texture {
+        width: 50%;
+      }
+      .texture {
+        h1 {
+          color: white;
+        }
+        p {
+          font-size: 1.1rem;
+          color: white;
+        }
+        .type-email {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          input {
+            width: 58%;
+            height: 45px;
+            border-radius: 20px;
+            padding: 0 15px;
+            background-color: rgb(255, 255, 255, 0.2);
+            font-size: 1rem;
+          }
+          button {
+            padding: 5px 20px;
+            border-radius: 25px;
+          }
+        }
+      }
+    }
+    .most-popular {
+      @include widthCenter;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      .popular-card {
+        background-color: $secondary1;
+        width: 45%;
+        border-radius: 30px;
+        padding: 20px;
+        .image-place {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+        span {
+          color: $primary1;
+          font-weight: bolder;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
