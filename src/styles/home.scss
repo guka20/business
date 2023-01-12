@@ -359,9 +359,9 @@
     }
     .newslatter {
       width: 86%;
-      padding: 0 2%;
+      padding: 50px 2%;
+      background-repeat: no-repeat;
       margin: 50px auto;
-      height: 500px;
       border-radius: 50px;
       background-image: url("../assets/newslatter.png");
       display: flex;
@@ -383,6 +383,7 @@
           display: flex;
           justify-content: space-between;
           input {
+            color: white;
             width: 58%;
             height: 45px;
             border-radius: 20px;

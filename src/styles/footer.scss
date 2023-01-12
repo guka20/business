@@ -1,0 +1,74 @@
+footer {
+  font-family: "Nunito", sans-serif;
+  @include widthCenter;
+  margin-top: 60px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1.1rem;
+  .contact {
+    width: 26%;
+    .icon {
+      margin: 0;
+      padding: 0;
+      padding-right: 5px;
+      color: $primary1;
+      font-size: 1.3rem;
+      svg {
+        vertical-align: middle;
+      }
+    }
+  }
+  .download {
+    width: 30%;
+  }
+  .page-details {
+    margin: 0;
+    width: 14%;
+    li:not(:first-child) {
+      margin: 10px 0;
+    }
+    .header {
+      font-weight: bolder;
+      font-size: 1.2rem;
+    }
+  }
+  .download {
+    align-self: center;
+    background-color: $secondary1;
+    .title {
+      color: $primary1;
+      font-weight: bold;
+    }
+    .download-buttons {
+      display: flex;
+      align-items: center;
+      button {
+        width: 130px;
+        height: 50px;
+        border-radius: 30px;
+        font-size: 1rem;
+        &.app-store {
+          background-color: $secondary3;
+          color: white;
+          margin-right: 10px;
+        }
+        &.play-store {
+          background-color: #d3d3d3;
+        }
+      }
+    }
+  }
+}
+.copyright {
+  font-size: 1.1rem;
+  @include widthCenter;
+  margin: 70px auto 30px auto;
+  display: flex;
+  justify-content: space-between;
+  .socials span {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+}

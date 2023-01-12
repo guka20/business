@@ -8,6 +8,9 @@
   justify-content: space-between;
   align-items: center;
   font-size: 1.1rem;
+  a {
+    text-decoration: none;
+  }
   .logo {
     width: 150px;
   }
@@ -47,22 +50,27 @@
       }
       &:hover {
         .page-list {
-          transition: 1s height;
+          transition: 1.5s height;
           display: flex;
-          height: 150px;
+          height: min-content;
+          height: calc(51px * 4);
           &:hover {
             display: flex;
+          }
+          li::after {
+            content: "";
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: $primary1;
+            transition: 0.5s width;
           }
           li:hover {
             position: relative;
             &::after {
-              content: "";
-              position: absolute;
-              bottom: 1px;
-              left: 0;
               width: 100%;
-              background-color: $primary1;
-              height: 3px;
             }
           }
         }

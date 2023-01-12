@@ -37,6 +37,10 @@ export const Page = () => {
       element: <All.Price />,
     },
     {
+      path: "/blog",
+      element: <All.Blog />,
+    },
+    {
       path: "*",
       element: <All.Error />,
     },

@@ -1,26 +1,65 @@
 import React from "react";
 import { AiFillCaretDown } from "react-icons/ai";
+import { Link } from "react-router-dom";
 export const Navbar = () => {
   let { pathname } = window.location;
   return (
-    <nav
-      className="navbar"
-      style={{ color: pathname === "/" ? "white" : "black" }}
-    >
+    <nav className="navbar">
       <img src={require("../assets/Logo.png")} alt="logo" className="logo" />
       <ul className="links">
-        <li>Home</li>
-        <li>About</li>
-        <li>Features</li>
-        <li className="drop-down">
+        <Link to="/" style={{ color: pathname === "/" ? "white" : "black" }}>
+          <li>Home</li>
+        </Link>
+        <Link
+          to="/about"
+          style={{ color: pathname === "/" ? "white" : "black" }}
+        >
+          <li>About</li>
+        </Link>
+        <Link
+          to="/features"
+          style={{ color: pathname === "/" ? "white" : "black" }}
+        >
+          <li>Features</li>
+        </Link>
+        <li
+          className="drop-down"
+          style={{ color: pathname === "/" ? "white" : "black" }}
+        >
           Pages <AiFillCaretDown />
           <ul className="page-list">
-            <li className="list-item">page 1</li>
-            <li className="list-item">page 2</li>
-            <li className="list-item">page 3</li>
+            <Link
+              to="/Integrations"
+              style={{ color: pathname === "/" ? "#5236ff" : "black" }}
+            >
+              <li className="list-item">Integrations</li>
+            </Link>
+            <Link
+              to="/Pricing"
+              style={{ color: pathname === "/" ? "#5236ff" : "black" }}
+            >
+              <li className="list-item">Pricing</li>
+            </Link>
+            <Link
+              to="/careers"
+              style={{ color: pathname === "/" ? "#5236ff" : "black" }}
+            >
+              <li className="list-item">Careers</li>
+            </Link>
+            <Link
+              to="/License"
+              style={{ color: pathname === "/" ? "#5236ff" : "black" }}
+            >
+              <li className="list-item">License</li>
+            </Link>
           </ul>
         </li>
-        <li>Blog</li>
+        <Link
+          to="/blog"
+          style={{ color: pathname === "/" ? "white" : "black" }}
+        >
+          <li>Blog</li>
+        </Link>
       </ul>
       <button
         className="sign-in"
