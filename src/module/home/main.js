@@ -29,17 +29,17 @@ export const Main = () => {
       </div>
       <div className="cards">
         <Card
-          name="cardone"
+          name="home/cardone"
           title="Secured Platform"
           text="Contrary to popular belief, Lore Ipsum is not simply random text. It has roots in a piece."
         />
         <Card
-          name="cardtwo"
+          name="home/cardtwo"
           title="Advanced Analytics"
           text="Contrary to popular belief, Lore Ipsum is not simply random text. It has roots in a piece."
         />
         <Card
-          name="cardthree"
+          name="home/cardthree"
           title="Powerful Automation"
           text="Contrary to popular belief, Lore Ipsum is not simply random text. It has roots in a piece."
         />
@@ -149,7 +149,10 @@ export const Main = () => {
           If you are going to use a passage.
         </div>
         <div className="user">
-          <img src={require("../../assets/home/userimage.png")} alt="userimage" />
+          <img
+            src={require("../../assets/home/userimage.png")}
+            alt="userimage"
+          />
           <h3>James Toriff</h3>
           <p>Developer</p>
           <span>
@@ -170,7 +173,10 @@ export const Main = () => {
           <h2>Accepted Payment Methods</h2>
           <div className="methods">
             <img src={require("../../assets/home/visa.png")} alt="method" />
-            <img src={require("../../assets/home/mastercard.png")} alt="method" />
+            <img
+              src={require("../../assets/home/mastercard.png")}
+              alt="method"
+            />
             <img src={require("../../assets/home/paypal.png")} alt="method" />
             <img src={require("../../assets/home/amazon.png")} alt="method" />
           </div>
@@ -244,7 +250,10 @@ export const Main = () => {
             <button>Get Started</button>
           </div>
         </div>
-        <img src={require("../../assets/home/departments.png")} alt="department" />
+        <img
+          src={require("../../assets/home/departments.png")}
+          alt="department"
+        />
       </div>
       <div className="title">
         <div className="features">
