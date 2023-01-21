@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Card } from "../../components/Card";
-import { PopularCard } from "../../components/PopularCard";
+import { Card, PopularCard } from "../../components";
 
 export const Main = () => {
   const [loc, setLocation] = useState({
@@ -55,7 +54,7 @@ export const Main = () => {
           </p>
           <div className="costeffective">
             <img
-              src={require("../../assets/costefective.png")}
+              src={require("../../assets/home/costefective.png")}
               alt="costefective"
             />
             <div>
@@ -68,7 +67,7 @@ export const Main = () => {
           </div>
         </div>
         <img
-          src={require("../../assets/mainpagestatic.png")}
+          src={require("../../assets/home/mainpagestatic.png")}
           alt="statisticimage"
         />
       </div>
@@ -108,7 +107,7 @@ export const Main = () => {
           <div className="texture">
             <div className="header">
               <img
-                src={require("../../assets/user.png")}
+                src={require("../../assets/home/user.png")}
                 alt="userLogo"
                 width="50px"
               />
@@ -122,7 +121,7 @@ export const Main = () => {
             <button className="get-started">Get Started</button>
           </div>
           <img
-            src={require("../../assets/accountimage.png")}
+            src={require("../../assets/home/accountimage.png")}
             alt="cardimage"
             className="card-image"
           />
@@ -133,11 +132,11 @@ export const Main = () => {
           <div className="features">
             <span>Testimonial</span>
           </div>
-          <div className="introduction">
+          <div className="introduction" style={{ color: "white" }}>
             <h1>Trusted by milions of creators.</h1>
           </div>
           <img
-            src={require("../../assets/quote.png")}
+            src={require("../../assets/home/quote.png")}
             alt="quote"
             width="30px"
             className="quote"
@@ -150,11 +149,11 @@ export const Main = () => {
           If you are going to use a passage.
         </div>
         <div className="user">
-          <img src={require("../../assets/userimage.png")} alt="userimage" />
+          <img src={require("../../assets/home/userimage.png")} alt="userimage" />
           <h3>James Toriff</h3>
           <p>Developer</p>
           <span>
-            <img src={require("../../assets/Star.png")} alt="starsrate" />
+            <img src={require("../../assets/home/Star.png")} alt="starsrate" />
           </span>
         </div>
       </div>
@@ -170,10 +169,10 @@ export const Main = () => {
           </p>
           <h2>Accepted Payment Methods</h2>
           <div className="methods">
-            <img src={require("../../assets/visa.png")} alt="method" />
-            <img src={require("../../assets/mastercard.png")} alt="method" />
-            <img src={require("../../assets/paypal.png")} alt="method" />
-            <img src={require("../../assets/amazon.png")} alt="method" />
+            <img src={require("../../assets/home/visa.png")} alt="method" />
+            <img src={require("../../assets/home/mastercard.png")} alt="method" />
+            <img src={require("../../assets/home/paypal.png")} alt="method" />
+            <img src={require("../../assets/home/amazon.png")} alt="method" />
           </div>
         </div>
         <div className="card basic">
@@ -245,7 +244,7 @@ export const Main = () => {
             <button>Get Started</button>
           </div>
         </div>
-        <img src={require("../../assets/departments.png")} alt="department" />
+        <img src={require("../../assets/home/departments.png")} alt="department" />
       </div>
       <div className="title">
         <div className="features">

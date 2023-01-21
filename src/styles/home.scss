@@ -1,6 +1,6 @@
 .home {
   width: 100%;
-  background-image: url("../assets/bannerbackround.png");
+  background-image: url("../assets/home/bannerbackround.png");
   background-position: top right;
   background-size: 85% 400px;
   background-repeat: no-repeat;
@@ -50,27 +50,7 @@
   main.main {
     display: flex;
     flex-direction: column;
-    .title {
-      @include widthCenter;
-      .features {
-        text-align: center;
-        span {
-          padding: 25px 46px;
-          background: $secondary2;
-          border-radius: 39px;
-          color: $primary1;
-          font-size: 1.3rem;
-        }
-      }
-      .introduction {
-        text-align: center;
-        h1 {
-          margin: 30px auto;
-          width: 400px;
-          font-size: 2rem;
-        }
-      }
-    }
+    @include heading;
     .cards {
       @include widthCenter;
       display: flex;
@@ -202,29 +182,13 @@
       width: 100%;
       padding: 50px 0px 100px 0;
       background-color: $primary1;
-      background-image: url("../assets/testimonial.png");
+      background-image: url("../assets/home/testimonial.png");
       background-size: cover;
       background-position: center center;
-      .title {
-        margin-top: 100px;
-        .features {
-          span {
-            background-color: rgba(255, 255, 255, 0.3);
-            color: white;
-          }
-        }
-        .introduction {
-          margin-top: 50px;
-          h1 {
-            width: auto;
-            color: white;
-          }
-        }
-        img.quote {
-          position: relative;
-          left: 50%;
-          transform: translateX(-50%);
-        }
+      img.quote {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
       }
       .description {
         text-align: center;
@@ -363,7 +327,7 @@
       background-repeat: no-repeat;
       margin: 50px auto;
       border-radius: 50px;
-      background-image: url("../assets/newslatter.png");
+      background-image: url("../assets/home/newslatter.png");
       display: flex;
       align-items: center;
       img,

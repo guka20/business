@@ -1,3 +1,5 @@
+// Font Family
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 // Primary colors
 $primary1: #5236ff;
 
@@ -13,6 +15,26 @@ $secondary5: #ffffff;
   width: 95%;
   margin: 0 auto;
 }
-
-// Font Family
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@mixin heading {
+  .title {
+    @include widthCenter;
+    .features {
+      text-align: center;
+      span {
+        padding: 15px 35px;
+        background: $secondary2;
+        border-radius: 39px;
+        color: $primary1;
+        font-size: 1.3rem;
+      }
+    }
+    .introduction {
+      text-align: center;
+      h1 {
+        margin: 30px auto;
+        width: 400px;
+        font-size: 2rem;
+      }
+    }
+  }
+}

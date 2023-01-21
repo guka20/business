@@ -16,7 +16,7 @@ export const Header = () => {
           </button>
         </section>
         <img
-          src={require("../../assets/mainStatic.png")}
+          src={require("../../assets/home/mainStatic.png")}
           alt="static"
           width="50%"
         />

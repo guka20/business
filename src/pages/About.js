@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import { Main } from "../module/about/main";
 
 export const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <div className="about">
+      <Main />
+    </div>
+  );
+};

@@ -19,29 +19,33 @@ export const Footer = () => {
           </p>
 
           <table>
-            <tr>
-              <td className="icon">
-                <AiOutlineMail />
-              </td>
-              <td>saasup@gmail.com</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>mail@sassup.com</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td className="icon">
+                  <AiOutlineMail />
+                </td>
+                <td>saasup@gmail.com</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>mail@sassup.com</td>
+              </tr>
+            </tbody>
           </table>
           <br />
           <table>
-            <tr>
-              <td className="icon">
-                <BsFillTelephoneInboundFill />
-              </td>
-              <td>+987 6541 3654</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>+001 6547 6589</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td className="icon">
+                  <BsFillTelephoneInboundFill />
+                </td>
+                <td>+987 6541 3654</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>+001 6547 6589</td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <ul className="page-details">
